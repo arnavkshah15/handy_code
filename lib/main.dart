@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:handy_code/pages/home_screen.dart';
 import 'package:handy_code/pages/splash_screen.dart';
 import 'package:handy_code/pages/Customize_Snippet.dart';
+import 'package:handy_code/pages/snippet_edit.dart';
 
 void main() {
   runApp(const MainApp());
@@ -22,6 +23,7 @@ class MainApp extends StatelessWidget {
         '/home': (context) => HomePage(),
         '/splash': (context) => SplashScreen(),
         '/snip': (context) => Snip_page(),
+        '/edit': (context) => SnippetScreen()
       },
     );
   }

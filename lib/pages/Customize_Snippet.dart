@@ -81,10 +81,14 @@ class Snip extends StatelessWidget {
                 ),
                 GestureDetector(
                   //onTap: ""Edit Snippet"",
+                  onTap: (){
+                    Navigator.pushReplacementNamed(context, '/edit');
+                  },
                   child: Icon(
                     Icons.edit,
                     color: Colors.black,
                     size: 15,
+
                   ),
                 )
               ],
