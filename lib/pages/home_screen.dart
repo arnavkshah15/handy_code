@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.black,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -34,9 +34,12 @@ class _HomePageState extends State<HomePage> {
             Center(
                 child: Text(
               "SET   THE",
-              style: TextStyle(fontSize: 30),
+              style: TextStyle(fontSize: 30, color: Colors.blue.shade400),
             )),
-            Center(child: Text("LANGUAGE", style: TextStyle(fontSize: 30))),
+            Center(
+                child: Text("LANGUAGE",
+                    style:
+                        TextStyle(fontSize: 30, color: Colors.blue.shade400))),
             SizedBox(
               height: 30,
             ),
@@ -108,6 +111,18 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ],
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              child: Text(
+                "feedback",
+                style: TextStyle(
+                    decoration: TextDecoration.underline,
+                    fontSize: 20,
+                    color: Colors.blue.shade700),
+              ),
             )
           ],
         ));
