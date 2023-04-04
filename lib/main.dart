@@ -10,16 +10,16 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
           child: Text('Hello World!'),
-        
         ),
       ),
       initialRoute: '/home',
       routes: {
-        '/home':(context) => HomePage(),
+        '/home': (context) => HomePage(),
       },
     );
   }

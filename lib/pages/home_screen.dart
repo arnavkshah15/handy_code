@@ -21,9 +21,16 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         backgroundColor: Colors.green,
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            SizedBox(
+              height: MediaQuery.of(context).size.width / 4,
+            ),
+            Image.asset("assets/images/logo.png"),
+            SizedBox(
+              height: MediaQuery.of(context).size.width / 6,
+            ),
             Center(
                 child: Text(
               "SET   THE",
@@ -72,7 +79,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             SizedBox(
-              height: 20,
+              height: MediaQuery.of(context).size.width / 6,
             ),
             Row(
               children: [
