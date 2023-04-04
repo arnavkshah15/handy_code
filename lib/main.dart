@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:handy_code/pages/home_screen.dart';
 import 'package:handy_code/pages/splash_screen.dart';
+import 'package:handy_code/Snippet_page/Customize_Snippet.dart';
 
 void main() {
   runApp(const MainApp());
@@ -15,7 +16,7 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: Snip_page()
         ),
       ),
       initialRoute: '/splash',
