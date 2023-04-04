@@ -21,13 +21,15 @@ class _SplashScreenState extends State<SplashScreen> {
       color: Colors.black,
       child: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(
-              height: 325,
-            ),
             Image.asset('assets/images/logo.png'),
+            SizedBox(
+              height: MediaQuery.of(context).size.width / 12,
+            ),
             Text(
-              'Coding Made Easy on Mobile',
+              'Coding Made Easy on Mobile ',
               style: TextStyle(color: Colors.white),
             ),
           ],
