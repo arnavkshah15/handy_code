@@ -33,7 +33,8 @@ class _SnipState extends State<Snip_page> {
               ),
             ),
             Divider(
-              height: 10,
+              height: 20,
+              color: Colors.black,
             ),
             Expanded(
               child: ListView.builder(
