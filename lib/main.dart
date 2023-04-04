@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
           child: Text('Hello World!'),
         ),
       ),
-      initialRoute: '/',
+      initialRoute: '/splash',
       routes: {
         '/home': (context) => HomePage(),
         '/splash': (context) => SplashScreen(),
