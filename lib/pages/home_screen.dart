@@ -90,6 +90,7 @@ class _HomePageState extends State<HomePage> {
                   width: MediaQuery.of(context).size.width / 7.5,
                 ),
                 GestureDetector(
+                  onTap: () => Navigator.pushReplacementNamed(context, '/snip'),
                   child: Container(
                     width: MediaQuery.of(context).size.width / 1.5,
                     height: 40,
