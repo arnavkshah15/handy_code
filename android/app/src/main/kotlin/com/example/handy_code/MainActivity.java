@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import org.jetbrains.annotations.NotNull;
 
 import io.flutter.embedding.android.FlutterActivity;
 import io.flutter.plugin.common.MethodCall;
@@ -14,7 +15,7 @@ public class MainActivity extends FlutterActivity {
     private static final String CHANNEL_NAME="flutter.native/helper";
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         new MethodChannel(getFlutterEngine().getDartExecutor().getBinaryMessenger(),CHANNEL_NAME).setMethodCallHandler((call, result) -> {
 

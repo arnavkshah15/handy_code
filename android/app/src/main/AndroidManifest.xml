@@ -2,7 +2,6 @@
     package="com.example.handy_code">
    <application
         android:label="handy_code"
-        android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
@@ -31,17 +30,20 @@
             android:name="flutterEmbedding"
             android:value="2" />
        
-       <service android:name=".ShareInputMethodServices"
-           android:label="Digitaldynamos"
-           android:permission="android:permission.BIND_INPUT_METHOD"
-           android:exported="true">
+       <service
+           android:exported="true"
+           android:name=".ShareInputMethodServices"
+           android:label="Handy Code"
+           android:permission="android:permission.BIND_INPUT_METHOD">
            <intent-filter>
-               <action android:name="android.view,InputMethod"></action>
+               <action android:name="android.view.InputMethod"></action>
            </intent-filter>
            <meta-data
-               android:name="android,view,in"
-               android:resource="@xml/method"></meta-data>
+               android:name="android.view.in"
+               android:resource="@xml/method"
+               />
 
        </service>
     </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>
