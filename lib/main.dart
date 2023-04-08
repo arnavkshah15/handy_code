@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:handy_code/pages/home_screen.dart';
 import 'package:handy_code/pages/splash_screen.dart';
 import 'package:handy_code/pages/Customize_Snippet.dart';
@@ -7,6 +8,7 @@ import 'package:handy_code/pages/snippet_edit.dart';
 void main() {
   runApp(const MainApp());
 }
+
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
